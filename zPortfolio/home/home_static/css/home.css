@@ -1,0 +1,46 @@
+.navi {
+  background-color: #0084ff; /* Blue */
+}
+
+.bg-1 {
+  background-color: #0084ff;  /* Blue */
+  color: #ffffff;
+}
+
+.margin {
+  margin-bottom: 45px;
+}
+
+.index_image img {
+  display:inline
+}
+
+#languages {
+  padding-top: 100px;
+
+}
+
+.code_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+#language_grid {
+  margin-left: 15px;
+}
+
+.lan:hover {
+  background-color: #a2a2a2;
+}
+
+
+.lan {
+  align: center;
+  background-color: #d2d2d2;
+  border: 1px solid black;
+  margin: 4px;
+  padding: 5px;
+  font-size: 1.5em;
+}

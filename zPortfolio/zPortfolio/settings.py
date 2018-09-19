@@ -14,9 +14,9 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 HOME_TEMPLATE_DIR = os.path.join(BASE_DIR,'home/home_templates/home')
-HOME_STATIC_ROOT = os.path.join(BASE_DIR, 'home/home_static')
+HOME_STATIC_DIR = os.path.join(BASE_DIR, 'home/home_static')
 HOME_MEDIA_DIR = os.path.join(BASE_DIR, 'home/home_media')
 HOME_PC_DIR = os.path.join(BASE_DIR, 'home/home_media/pc_builds')
 HOME_ABOUT_DIR = os.path.join(BASE_DIR, 'home/home_media/about_me')
@@ -137,4 +137,5 @@ STATICFILES_DIRS = [
     HOME_PC_DIR,
     HOME_ABOUT_DIR,
     BBB_MEDIA_DIR,
+    HOME_STATIC_DIR,
 ]

@@ -1,18 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
 {% load staticfiles %}
-<div class="container">
-  <h1>Hello World</h1>
+
+
+<!-- Section 1 -->
+<div class="index_image container-fluid bg-1 text-center">
+  <h1>Zachary Stall</h1>
+  <h4>Developer in Denver Colorado</h4>
+  <img src="{% static "index_03.jpg" %}" class="img-responsive rounded-circle margin" alt="Picture not loading" width="350" height="auto">
 </div>
-<div class="col-md-3" align="center">
-  <div class="thumbnail">
-    <img src="{% static "z_logo.png" %}" alt="Picture not loading">
-  </div>
-  <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div class="jumbotron">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!-- End Section 1 -->
+
+<!-- Section 2 -->
+<div class="container" id="languages">
+  <div class="row">
+    <div class="col-md-3">
+      <br>
+      <img class="code_image" src="{% static "code.png" %}" class="img-thumbnail img-responsive" alt="Img not loading" width="250" height="auto">
+    </div>
+    <div class="col-md-9">
+      <div class="container" id="language_grid">
+        <h2>Languages</h2>
+        <p>Through work, coursework, and self teaching, these are the languages and frameworks I am familiar with</p>
+        <div class="container">
+          <div class="row">
+            <div class="lan col-md-3">HTML</div>
+            <div class="lan col-md-3">CSS</div>
+            <div class="lan col-md-3">Bootstrap</div>
+            <div class="w-100"></div>
+            <div class="lan col-md-3">JavaScript</div>
+            <div class="lan col-md-3">Python</div>
+            <div class="lan col-md-3">Java</div>
+            <div class="w-100"></div>
+            <div class="lan col-md-3">php</div>
+            <div class="lan col-md-3">Django</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+
+
+
+
 {% endblock %}

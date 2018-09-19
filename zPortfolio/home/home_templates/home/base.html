@@ -6,10 +6,14 @@
     <title>ZStall Portfolio</title>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <!-- LOGO -->
+    <link rel="shortcut icon" href="{% static "z_logo.png" %}">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- HEADER -->
+    <nav class="navi navbar navbar-expand-lg navbar-dark sticky-top">
       <a class="navbar-brand" href="#">
         <img src="{% static "z_logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="">
         ZStall Portfolio
@@ -44,7 +48,7 @@
         </ul>
       </div>
     </nav>
-
+    <!-- END HEADER -->
 
     {% block content %}
     {% endblock %}
