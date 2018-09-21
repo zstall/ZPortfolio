@@ -3,25 +3,36 @@
 {% load staticfiles %}
 
 
-<!-- Section 1 -->
+<!-- Header Cont...-->
 <div class="index_image container-fluid bg-1 text-center" id="home">
   <h1>Zachary Stall</h1>
   <h4>Developer in Denver Colorado</h4>
-  <img class="img-responsive rounded-circle margin" src="{% static "index_03.jpg" %}" alt="Picture not loading" width="350" height="auto">
+  <!-- Attention Grabber Image -->
+  <img  class="img-responsive rounded-circle margin"
+        src="{% static "index_03.jpg" %}"
+        alt="Picture not loading"
+        width="350"
+        height="auto">
 </div>
-<!-- End Section 1 -->
+<!-- End Header Cont. -->
 
-<!-- Section 2 -->
+<!-- Languages Section: experties and about me -->
 <div class="container" id="languages">
   <div class="row">
     <div class="col-md-4">
       <br>
-      <img class="code_image" src="{% static "code.png" %}" alt="Img not loading" width="250" height="auto">
+      <img  class="code_image"
+            src="{% static "code.png" %}"
+            alt="Coding logo: </> nothing too exciting ;)"
+            width="250"
+            height="auto">
     </div>
+    <!-- Coding language grid -->
     <div class="col-md-8">
       <div class="container" id="language_grid">
         <h2>Languages</h2>
-        <p>Through work, coursework, and self teaching, these are the languages and frameworks I am familiar with</p>
+        <p>Through work experience, coursework, and self teaching,
+            these are the languages and frameworks I am familiar with.</p>
         <div class="container">
           <div class="row">
             <div class="lan col-md-3">HTML</div>
@@ -40,59 +51,86 @@
     </div>
   </div>
 </div>
+<!-- About me section. -->
 <div class="container-fluid bg-grey">
   <div class="container" id="languages">
     <div class="row">
       <div class="col-md-9">
         <div class="container" id="language_grid">
-          <h2>Languages</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2>Who I am:</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
+      <!-- Image of me, Caitlin, and Sam. -->
       <div class="col-md-3">
         <br>
-        <img class="img-responsive rounded-circle margin code_image slideanim" src="{% static "about.jpeg" %}" alt="Img not loading" width="300" height="auto">
+        <img  class="img-responsive rounded-circle margin code_image slideanim"
+              src="{% static "about.jpeg" %}"
+              alt="Img not loading"
+              width="300"
+              height="auto">
       </div>
     </div>
   </div>
 </div>
-<!-- End Section 2 -->
+<!-- End Language Section -->
 
-<!-- Section 3 -->
+<!-- Projects/Portfolio Section -->
 <div id="projects" class="container-fluid text-center">
   <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
+  <h4>Here are the projects I am working on.</h4>
   <div class="row text-center slideanim">
-    <div class="col-md-3">
+    <!-- Better Beer Blog -->
+    <div class="col-md-6">
       <div class="thumbnail">
-        <img class="img-fluid" src="{% static "bbb_logo_square.png" %}" alt="BBB logo">
+        <img  class="img-fluid"
+              src="{% static "bbb_logo_square.png" %}"
+              alt="BBB logo">
         <p><strong>Better Beer Blog</strong></p>
         <p>There's a lot of beer in Colorado...</p><br>
       </div>
     </div>
-    <div class="col-md-3">
+    <!-- PC Builds -->
+    <div class="col-md-6">
       <div class="thumbnail">
-        <img class="img-fluid" src="{% static "projects_pc.png" %}" alt="pc builds">
+        <img  class="img-fluid"
+              src="{% static "projects_pc.png" %}"
+              alt="pc builds">
         <p><strong>PC Builds</strong></p>
         <p>Here are a handful of PC's I've built.</p><br>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img class="img-fluid" src="{% static "coming_soon.png" %}" alt="coming soon image">
-        <p><strong>What's On Deck</strong></p>
-        <p>Instagram clone, socieal media clone, and more!</p>
+    <div id="projects" class="row text-center slideanim">
+      <!-- Placeholder -->
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <img  class="img-fluid"
+                src="{% static "coming_soon.png" %}"
+                alt="coming soon image">
+          <p><strong>What's On Deck</strong></p>
+          <p>Instagram clone, socieal media clone, and more!</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="thumbnail">
-        <img class="img-fluid" src="{% static "coming_soon.png" %}" alt="coming soon image">
-        <p><strong>What's On Deck</strong></p>
-        <p>Instagram clone, socieal media clone, and more!</p>
+      <!-- Placeholder -->
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <img  class="img-fluid"
+                src="{% static "coming_soon.png" %}"
+                alt="coming soon image">
+          <p><strong>What's On Deck</strong></p>
+          <p>Instagram clone, socieal media clone, and more!</p>
+        </div>
       </div>
     </div>
   </div><br>
 </div>
+<!-- Dreaded image carousel... JKJK, it has been fun getting this to work!!! -->
 <div id="carouselProject" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselProject" data-slide-to="0" class="active"></li>
@@ -119,21 +157,33 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<!-- end section 3 -->
+<!-- End Projects/Portfolio Section -->
+
+
 <!-- Contact Section -->
-<!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><strong>[location]</strong> Chicago, US</p>
+      <p><strong>[location]</strong> Denver, US</p>
       <p><strong>[c]</strong> +00 1515151515</p>
       <p><strong>[e]</strong> myemail@something.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
-        <div class="col-sm-6 form-group">
+        <form role="form" action="" method="post">
+
+          <p>Send me a message directly.</p>
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
@@ -148,7 +198,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 {% endblock %}
