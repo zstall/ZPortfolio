@@ -1,4 +1,56 @@
 
+#thanks {
+  padding-top: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.thanksBody {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanksContainer {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin-top: 50px;
+  background: rgba(0,0,0,0);
+  transform: rotate(-30deg) skew(25deg) scale(.75);
+  transition: 0.5s;
+}
+
+.thanksContainer img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.thanksContainer:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.thanksContainer:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: .7;
+}
+
+.thanksContainer:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: .4;
+}
+
+.thanksContainer:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: .1;
+}
+
 /* Global */
 .bg-grey {
   background-color: #f6f6f6;
@@ -24,7 +76,7 @@
 }
 
 /* Languages/About */
-#languages, #projects, #contact {
+#languages, #projects, #contact, #thanks {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -84,6 +136,10 @@
 .carousel-control-prev:hover, .carousel-control-next:hover {
   background-color: #0084ff;
   transition: background 0.8s ease-in-out;
+}
+
+#projects h4 {
+  padding-bottom: 25px;
 }
 
 /* sliding animation */

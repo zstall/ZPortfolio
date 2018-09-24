@@ -21,9 +21,10 @@ HOME_MEDIA_DIR = os.path.join(BASE_DIR, 'home/home_media')
 HOME_PC_DIR = os.path.join(BASE_DIR, 'home/home_media/pc_builds')
 HOME_ABOUT_DIR = os.path.join(BASE_DIR, 'home/home_media/about_me')
 
-BBB_TEMPLATE_DIR = os.path.join(BASE_DIR,'BetterBeerBlog/BBB_templates')
-BBB_STATIC_ROOT = os.path.join(BASE_DIR, 'BetterBeerBlog/BBB_static')
-BBB_MEDIA_DIR = os.path.join(BASE_DIR, 'BetterBeerBlog/BBB_medial')
+BBB_TEMPLATE_DIR = os.path.join(BASE_DIR,'BetterBeerBlog/BetterBeerBlog_templates')
+BBB_STATIC_ROOT = os.path.join(BASE_DIR, 'BetterBeerBlog/BetterBeerBlog_static')
+BBB_STATIC_DIR = os.path.join(BASE_DIR, 'BetterBerrBlog/BetterBeerBlog_static')
+BBB_MEDIA_DIR = os.path.join(BASE_DIR, 'BetterBeerBlog/BetterBeerBlog_medial')
 
 
 # Quick-start development settings - unsuitable for production
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'BetterBeerBlog',
-    'home'
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +140,11 @@ STATICFILES_DIRS = [
     BBB_MEDIA_DIR,
     HOME_STATIC_DIR,
 ]
+LOGIN_REDIRECT_URL = '/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'zstall4@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
