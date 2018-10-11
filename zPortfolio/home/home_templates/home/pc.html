@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block nav %}
+  <li class="nav-item active">
+    <a class="nav-link" href="{% url 'pc' %}">pcBuilds<span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#zero">|zero|</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#ember">ember</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#ammo">ammo can</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#ww">walter white</a>
+  </li>
+</ul>
+<ul class="navbar-nav  navbar-right">
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'home' %}">zachary stall portfolio</a>
+  </li>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+<div class="container">
+  <h2>PC Builds</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!-- Build 0: Most recent build - Absolute Zero -->
+  <div class="pcbuilds-container" id="zero">
+    <div class="pcbuildscard">
+
+      <h3>|Zero|</h3>
+      <h4>My most recent build and daily driver.</h4>
+
+      <div class="">
+        <img class="pc-main-img" src="{% static 'pc_builds/az/az02.jpg' %}" alt="">
+      </div>
+      <p>This is my latest build and my daily driver. I game and work on this PC. I had a hard time deciding cases. Sometimes I wish I would have went with a micro or mini itx build. But the corsair 460x s a beautiful case. I wasn't sold on it until I saw it in person. I tried to get everything I could in black, allowing me to change the color scheme using RGB LED's. In my next build, I have a plan/idea to do a all black, with no lighting (or at least very little). More detailed list, and area to leave comments at <a href="https://pcpartpicker.com" alt="">|Zero|</a><br>Here is the parts list is:</p>
+      <ul class="pcbuildsul">
+        <li>CPU: I7 - 8700K OC to 4.5GHz</li><br>
+        <li>CPU Cooler: NZXT - Kraken X52</li><br>
+        <li>Mobo: MSI - Z370 Gaming PRO Carbon</li><br>
+        <li>Memory: Corsair Vengaeance LPX 16GB</li><br>
+        <li>Storage01: Samsung - 960 Evo 250GB (OS)</li><br>
+        <li>Storage02: Intel - 730 Series 240GB 2.5" solid State Drive</li><br>
+        <li>Storage03: Western Digital - Cavier Blue 1TB</li><br>
+        <li>Storage04: Seagate - Barracuda 3TB</li><br>
+        <li>GPU: EVGA GTX 1070 8GB FTW Gaming ACX 3.0</li><br>
+        <li>Case: Corsair - Crystal 460X RGB</li><br>
+        <li>PSU: Corsair = 760W 80+ Platinum Certified Fully-Modular ATX Power Suply</li><br>
+        <li><a href="{% url 'pc' %}">Back to Top</a></li><br>
+      </ul>
+      <div class="pc-img-grid">
+        <div class="row">
+          <div class="img-rounded">
+            <!-- Return to https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h and create views to click for larger images -->
+            <img class="pc-img" src="{% static "pc_builds/az/az01.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az03.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az05.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az07.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+        <div class="row">
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az07.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az04.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az06.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/az/az08.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Build 1:My last Mini ATX build. I loved this guy, but others were not as impressed. :(-->
+    <div class="pcbuilds-container" id="ember">
+      <div class="pcbuildscard">
+
+        <h3>Ember</h3>
+        <h4>This was my second build, and when I truly got the tech bug.</h4>
+
+        <div class="">
+          <img class="pc-main-img" src="{% static 'pc_builds/ember/Ember.jpg' %}" alt="">
+        </div>
+        <p>This was my upgrade from Ammo Can. I upgraded several components including the power supply, mobo, ram, and gpu. This was great build, and allowed me to do a lot more aesthetics . The Cooler Master Hyper T2 did a wonderful job, and the air flow in the corsair 380t was impressive. However, I eventually upgraded to a AIO from Thermaltake so I could push the i7-3770k a little more. More detailed list, more pictures, and area to leave comments at <a href="https://pcpartpicker.com/b/8y8Ycf"  target="_blank" alt="">Ember</a><br>Here is the parts list is:</p>
+        <ul class="pcbuildsul">
+          <li>CPU: I7 - 3770K</li><br>
+  				<li>CPU Cooler: Cooler Master Hyper T2</li><br>
+  				<li>Mobo: Asus P8Z77- I Deluxe/WD Mini ITX</li><br>
+  				<li>Memory: Corsair Vengaeance LPX 16GB</li><br>
+  				<li>Storage02: Intel - 730 Series 240GB 2.5" solid State Drive</li><br>
+  				<li>Storage03: Western Digital - Cavier Blue 1TB</li><br>
+  				<li>Storage04: Seagate - Barracuda 3TB</li><br>
+  				<li>GPU: Asus GeForce GTX 970 4GB Strix</li><br>
+  				<li>Case: Corsair - 380T Mini ITX Tower</li><br>
+  				<li>PSU: Corsair = 760W 80+ Platinum Certified Fully-Modular ATX Power Suply</li><br>
+          <li><a href="#zero">Back to Top</a></li><br>
+        </ul>
+        <div class="row pc-img-grid">
+          <div class="img-rounded">
+            <!-- Return to https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h and create views to click for larger images -->
+            <img class="pc-img" src="{% static "pc_builds/ember/Ember.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/Ember02.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/ember99.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/Ember33.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+        <div class="row">
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/ember01.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/embor02.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/IMG_0015.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ember/IMG_0019.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Build 2: Ammo Can was my first build that was always being updated! Where I got my start.-->
+    <div class="pcbuilds-container" id="ammo">
+      <div class="pcbuildscard">
+
+        <h3>Ammo Can</h3>
+        <h4>First build, where it all began!</h4>
+
+        <div class="">
+          <img class="pc-main-img" src="{% static 'pc_builds/ammo/AmmoCan01.jpg' %}" alt="">
+        </div>
+        <p>This was my first ever build, and it was completed back in 2013. I've since upgraded twice, and I'll soon be posting what I did. But, I was able to run this i7-3770k from 2013 to 2018. It is still a beast and with light overclocking can crush anything I was throwing at it. I gave it to my younger brother, who has benefited from my addiction to upgrade my computers, and is happily gaming away on it with a gtx 970. ;) More detailed list, pictures, and area to leave comments at <a href="https://pcpartpicker.com/b/GJBbt6" target="_blank" alt="">Ammo Can</a><br>Here is the parts list is:</p>
+        <ul class="pcbuildsul">
+          <li>CPU: I7 - 3770K</li><br>
+							<li>CPU Cooler: Cooler Master Hyper 212 Evo</li><br>
+							<li>Mobo: Asus P8Z77- V PRO ATX LG1155</li><br>
+							<li>Memory: Corsair Vengaeance 8GB</li><br>
+							<li>Storage02: Intel - 730 Series 240GB 2.5" solid State Drive</li><br>
+							<li>Storage03: Western Digital - Cavier Blue 1TB</li><br>
+							<li>Storage04: Seagate - Barracuda 3TB</li><br>
+							<li>GPU: EVGA GTX 670 4GB FTW</li><br>
+							<li>Case: Corsair - C70 Military Green ATX Mid Tower</li><br>
+							<li>PSU: Corsair = CSM 750W 80+ Gold Certified Semi Modular ATX</li><br>
+          <li><a href="#zero">Back to Top</a></li><br>
+        </ul>
+        <div class="row pc-img-grid">
+          <div class="img-rounded">
+            <!-- Return to https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h and create views to click for larger images -->
+            <img class="pc-img" src="{% static "pc_builds/ammo/2.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ammo/13.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ammo/22.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ammo/AmmoCan01.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+        <div class="row">
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ammo/5.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ammo/41.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img img-rounded" src="{% static "pc_builds/ammo/67.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img img-rounded" style="margin-top: -50px; height: 95.9%; overflow: hidden;" src="{% static "pc_builds/ammo/can01.JPG" %}" alt="Picture not loading">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Build 3: Heisenberg was a fun build, but after the dust settle too flashy for my taste.-->
+    <div class="pcbuilds-container" id="ww">
+      <div class="pcbuildscard">
+
+        <h3>Heisenberg</h3>
+        <h4>Open air build.</h4>
+
+        <div class="">
+          <img class="pc-main-img" src="{% static 'pc_builds/ww/ww12.jpg' %}" alt="">
+        </div>
+        <p>Ole Walter White was a bit of a mistep in my building career. After upgrading to Ember I was riding high, I loved the process of building, and finding unique cases and parts. I really liked the idea of doing a test bench or open air build, and that's how I landed on the Thermal Take p3. After a short time, I felt like this PC was trying wayyyyy too hard to be cool, and why when I upgraded I decided to go with a more traditional case in the Corsair Crystal 460X.</p>
+        <ul class="pcbuildsul">
+          <li>CPU: I7 - 3770K</li><br>
+							<li>CPU Cooler: Corsair - Hydro Series 120mm</li><br>
+							<li>Mobo: Asus P8Z77- I Deluxe/WD Mini ITX</li><br>
+							<li>Memory: Corsair Vengaeance 8GB</li><br>
+							<li>Storage02: Intel - 730 Series 240GB 2.5" solid State Drive</li><br>
+							<li>Storage03: Western Digital - Cavier Blue 1TB</li><br>
+							<li>Storage04: Seagate - Barracuda 3TB</li><br>
+							<li>GPU: EVGA GTX 1070 8GB FTW</li><br>
+							<li>Case: Corsair - Thermaltake Core P3</li><br>
+							<li>PSU: Corsair = 760W 80+ Platinum Certified Fully-Modular ATX Power Suply</li><br>
+          <li><a href="#zero">Back to Top</a></li><br>
+        </ul>
+        <div class="row pc-img-grid">
+          <div class="img-rounded">
+            <!-- Return to https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h and create views to click for larger images -->
+            <img class="pc-img" src="{% static "pc_builds/ww/ww01.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww06.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww08.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww14.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+        <div class="row">
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww05.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww07.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww10.jpg" %}" alt="Picture not loading">
+          </div>
+          <div class="img-rounded">
+            <img class="pc-img" src="{% static "pc_builds/ww/ww15.jpg" %}" alt="Picture not loading">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+{% endblock %}

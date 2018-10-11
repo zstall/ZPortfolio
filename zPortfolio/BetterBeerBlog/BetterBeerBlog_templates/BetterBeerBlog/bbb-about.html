@@ -1,0 +1,48 @@
+{% extends "BetterBeerBlog/base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<div class="container">
+  <div class="jumbotron about-intro">
+    <h2>Meet the drinkers... writers!</h2>
+    <p>Better Beer Blog is a place to learn about better beer.</p>
+  </div>
+  <!-- Writer one -->
+  <div class="matt-stilwell writer">
+    <div class="about-img-container">
+      <img class="about-img" src="{% static "BetterBeerBlog/bbb_logo_round.png" %}" alt="">
+    </div>
+
+    <div class="about-writer">
+      <h3>Matt Stilwell</h3><br>
+      <p>BIO COMING SOON: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <!-- Writer two -->
+  <div class="caitlin-kelly writer">
+    <div class="about-img-container">
+      <img class="about-img" src="{% static "BetterBeerBlog/cr_bbb_logo_round.png" %}" alt="">
+    </div>
+
+    <div class="about-writer">
+      <h3>Caitlin Kelly</h3><br>
+      <p>BIO COMING SOON: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+
+  <!-- Writer three -->
+  <div class="zach-stall writer">
+    <div class="about-img-container">
+      <img class="about-img" src="{% static "BetterBeerBlog/db_bbb_logo_round.png" %}" alt="">
+    </div>
+
+    <div class="about-writer">
+      <h3>Zachary Stall</h3><br>
+      <p>BIO COMING SOON: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

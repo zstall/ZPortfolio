@@ -1,0 +1,63 @@
+{% extends "BetterBeerBlog/base.html" %}
+{% block content %}
+<div class="container centerstage">
+  <h1 class="posttittle">{{post.title}}</h1>
+  {% if post.published_date %}
+    <div class="date postdate">
+      {{ post.published_date }}
+    </div>
+  {% else %}
+    <a class="btn btn-default" href="{% url 'BetterBeerBlog:post_publish' pk=post.pk %}">Publish</a>
+  {% endif %}
+
+  <p class="postcontent">{{ post.text|safe|linebreaksbr }}</p>
+
+  {% if user.is_authenticated %}
+    <a class="btn btn-primary" href="{% url 'BetterBeerBlog:post_edit' pk=post.pk %}">
+      <span class="glyphicon glyphicon-pencil"></span>
+    </a>
+    <a class="btn btn-danger" href="{% url 'BetterBeerBlog:post_remove' pk=post.pk %}">
+      <span class="glyphicon glyphicon-remove"></span>
+    </a>
+  {% endif %}
+
+  <hr>
+  <div class="container">
+    <a class="btn btn-primary pull-right" href="{% url 'BetterBeerBlog:add_comment_to_post' pk=post.pk %}">
+      Add a Comment
+    </a>
+
+
+    {% for comment in post.comments.all %}
+      <br>
+
+      {% if user.is_authenticated and comment.approved_comment %}
+        <hr>
+        <a class="btn btn-danger btn-xs btn-comment" href="{% url 'BetterBeerBlog:comment_remove' pk=comment.pk %}">
+          <span class="glyphicon glyphicon-remove" ></span>
+        </a>
+      {% endif %}
+
+
+      {% if user.is_authenticated or comment.approved_comment %}
+        {{ comment.created_date }}
+          {% if not comment.approved_comment %}
+          <a class="btn btn-default" href="{% url 'BetterBeerBlog:comment_remove' pk=comment.pk %}">
+            <span class="glyphicon glyphicon-remove"></span>
+          </a>
+          <a class="btn btn-primary" href="{% url 'BetterBeerBlog:comment_approve' pk=comment.pk %}">
+            <span class="glyphicon glyphicon-ok"></span>
+          </a>
+          {% endif %}
+          <p>{{comment.text|safe|linebreaks}}</p>
+          <p>Posted By: {{comment.author}}</p>
+      {% endif %}
+      {% empty %}
+      <p>No Comments.</p>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{% endblock %}

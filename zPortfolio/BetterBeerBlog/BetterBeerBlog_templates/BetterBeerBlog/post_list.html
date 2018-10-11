@@ -1,0 +1,69 @@
+{% extends "BetterBeerBlog/base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<div class="container-fluid beer-background">
+  <div class="beer">
+    <img class="bbb_logo" src="{% static "BetterBeerBlog/BBB_liquid_2.png" %}" alt="">
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 post-container">
+      <div class="">
+        {% for post in post_list %}
+          <div class="post">
+            <h1><a href="{% url 'BetterBeerBlog:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div class="date">
+              <p><strong>Published on:</strong> {{post.published_date}}</p>
+            </div>
+            <a href="{% url 'BetterBeerBlog:post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-md-3  side-add">
+      <div class="row">
+        <h4>you may also like: </h4>
+      </div>
+      <div class="row">
+        <div class="thumbnail side-add-thumbnail">
+          <a href="{% url 'pc' %}">
+            <img class="" src="{% static "BetterBeerBlog/Ember.jpg" %}" alt="">
+          </a>
+          <p><strong>PC Builds:</strong> Detailed parts lists and pictures.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="thumbnail side-add-thumbnail">
+          <a href="{% url 'pc' %}">
+            <img class="" src="{% static "BetterBeerBlog/zstall-portfolio.PNG" %}" alt="">
+          </a>
+          <p><strong>My Portfolio: </strong>Learn about me and check out some of my other work</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="thumbnail side-add-thumbnail">
+          <a href="{% url 'pc' %}">
+            <img class="" src="{% static "BetterBeerBlog/az02.jpg" %}" alt="">
+          </a>
+          <p><strong>PC Builds: </strong>My pc builds over the years</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="thumbnail side-add-thumbnail">
+          <a href="{% url 'pc' %}">
+            <img class="" src="{% static "BetterBeerBlog/can01.JPG" %}" alt="">
+          </a>
+          <p><strong>PC Builds: </strong>My pc builds over the years</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

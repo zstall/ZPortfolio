@@ -1,0 +1,173 @@
+.about-img {
+  display: block;
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-writer {
+  text-align: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.writer {
+  padding-bottom: 75px;
+}
+
+/* .writer {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+} */
+
+.bg-grey {
+  background-color: #d2d2d2;
+}
+
+
+.latofont {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.navi-right {
+  padding-right: 10px;
+}
+
+
+
+.bigbrand {
+  font-size: 1.53em;
+}
+
+.bbb_logo {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 10px auto 10px auto;
+}
+
+
+.bbb_logo_container, .post {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.beer-background {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+
+.beer {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.beer img {
+  max-width: 100%;
+  width: 1440px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.centerstage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.post-container {
+  margin-right: 10px;
+  border-right: 1px solid #d2d2d2;
+}
+
+.postdate {
+  text-align: center;
+}
+
+.posttitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+.btn-comment {
+  /* position: absolute;
+  right: 20%; */
+}
+.side-add-thumbnail {
+  margin-bottom: 100px;
+
+}
+
+.side-add img {
+
+}
+
+.writer h3 {
+  text-align: center;
+}
+
+.writer p {
+  padding-top: 0px;
+}
+
+/* Animation for highlighting color */
+.loader {
+  filter:hue-rotate(0deg);
+  background:linear-gradient(45deg,#0f8,#08f);
+  animation:hue 10000ms infinite linear;
+
+}
+
+@keyframes spinify {
+  0% {
+    transform: translate(0px,0px);
+
+  }
+  33% {
+    transform: translate(0px,24px);
+    border-radius:100%;
+    width:10px;
+    height:10px;
+
+  }
+   66% {
+    transform:translate(0px,-16px);
+  }
+
+   88% {
+    transform:translate(0px,4px);
+
+  }
+  100% {
+    transform:translate(0px,0px);
+  }
+}
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  100%{filter:hue-rotate(360deg);}
+
+}

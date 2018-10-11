@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Thank You</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <!-- LOGO -->
+    <link rel="shortcut icon" href="{% static "z_logo.png" %}">
+  </head>
+  <body class="">
+    <nav class="navi navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static "z_logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="">
+      </a>
+    </nav>
+    <div class="container" >
+      <div class="jumbotron" id="thanks">
+        <h1>Thank you for contacting me!</h1>
+        <p>I will be in touch shortly, click the image below to return to zstall.com</p>
+      </div>
+    </div>
+    <div class="thanksBody">
+      <div class="thanksContainer">
+        <a href="{% url 'home' %}">
+          <img src="{% static "thanks.png" %}" alt="Thank You Image">
+          <img src="{% static "thanks.png" %}" alt="Thank You Image">
+          <img src="{% static "thanks.png" %}" alt="Thank You Image">
+          <img src="{% static "thanks.png" %}" alt="Thank You Image">
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <p><a href="{% url 'home' %}">return to zstall.com</a></p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- custom JavaScript -->
+    <!-- JavaScript -->
+    <script type="text/javascript" src="{% static 'js/home.js' %}">
+
+    </script>
+  </body>
+</html>

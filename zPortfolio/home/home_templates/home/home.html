@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block nav %}
+  <li class="nav-item">
+    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#languages">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#projects">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact">Contact Me</a>
+  </li>
+{% endblock %}
+{% block content %}
+
+  <!-- Header Cont...-->
+  <div class="index_image container-fluid bg-1 text-center" id="home">
+    <h1>Zachary Stall</h1>
+    <h4>Developer in Denver Colorado</h4>
+    <!-- Attention Grabber Image -->
+    <img  class="img-responsive rounded-circle margin"
+          src="{% static "index_03.jpg" %}"
+          alt="Picture not loading"
+          width="350"
+          height="auto">
+  </div>
+  <!-- End Header Cont. -->
+
+  <!-- Languages Section: experties and about me -->
+  <div class="container" id="languages">
+    <div class="row">
+      <div class="col-md-4">
+        <br>
+        <img  class="code_image"
+              src="{% static "code.png" %}"
+              alt="Coding logo: </> nothing too exciting ;)"
+              width="250"
+              height="auto">
+      </div>
+      <!-- Coding language grid -->
+      <div class="col-md-8">
+        <div class="container" id="language_grid">
+          <h2>Languages</h2>
+          <p>Through work experience, coursework, and self teaching,
+              these are the languages and frameworks I am familiar with.</p>
+          <div class="container">
+            <div class="row">
+              <div class="lan col-md-3">HTML</div>
+              <div class="lan col-md-3">CSS</div>
+              <div class="lan col-md-3">Bootstrap</div>
+              <div class="w-100"></div>
+              <div class="lan col-md-3">JavaScript</div>
+              <div class="lan col-md-3">Python</div>
+              <div class="lan col-md-3">Java</div>
+              <div class="w-100"></div>
+              <div class="lan col-md-3">php</div>
+              <div class="lan col-md-3">Django</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About me section. -->
+  <div class="container-fluid bg-grey">
+    <div class="container" id="languages">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="container" id="language_grid">
+            <h2>Who I am:</h2>
+            <p>I am a Colorado native who grew up in Lyons and now lives in Denver.
+            I have a degree in mathematics from CSU, and have taken computer science courses
+            at Metropolitan State University in Denver. Most recently I've been working as
+            a online education specialist, developing online courses and maintaining content
+            on my company LMS and website. I have a passion for learning and technology. I'm
+            highly motivated to make an impact and learn new technology.</p>
+          </div>
+        </div>
+        <!-- Image of me, Caitlin, and Sam. -->
+        <div class="col-md-3">
+          <br>
+          <img  class="img-responsive rounded-circle margin code_image slideanim"
+                src="{% static "about.jpeg" %}"
+                alt="Img not loading"
+                width="300"
+                height="auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Language Section -->
+
+  <!-- Projects/Portfolio Section -->
+  <div id="projects" class="container text-center">
+    <h2>Portfolio</h2><br>
+    <h4>Here are the projects I am working on. Click on the images to view the pages.</h4>
+    <div class="row text-center slideanim">
+      <!-- Better Beer Blog -->
+      <div class="col-12 col-md-6 ">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="{% url 'BetterBeerBlog:post_list' %}">
+            <img  class="img-fluid"
+                  src="{% static "bbb_logo_square.png" %}"
+                  alt="BBB logo">
+          </a>
+          <p><strong>Better Beer Blog</strong></p>
+          <p>There's a lot of beer in Colorado...</p><br>
+        </div>
+      </div>
+      <!-- PC Builds -->
+      <div class="col-12 col-md-6">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="{% url 'pc' %}">
+            <img  class="img-fluid"
+                  src="{% static "projects_pc.png" %}"
+                  alt="pc builds">
+          </a>
+          <p><strong>PC Builds</strong></p>
+          <p>Here are a handful of PC's I've built.</p><br>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center slideanim">
+      <!-- IMG Grid, original Portfolio (static) page -->
+      <div class="col-12 col-md-6 ">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="http://zstall.com" target="_blank">
+            <img  class="img-fluid"
+                  src="{% static "img-grid-2.PNG" %}"
+                  alt="coming soon image">
+          </a>
+          <p><strong>Image Grid</strong></p>
+          <p>Another portfolio template I've created and work on.</p><br>
+        </div>
+      </div>
+      <!-- Leela IG insta account - 1000+ followers! -->
+      <div class="col-12 col-md-6">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <a href="https://www.instagram.com/leela_ig/?hl=en" target="_blank">
+            <img  class="img-fluid"
+                  src="{% static "leela-insta.PNG" %}"
+                  alt="pc builds">
+          </a>
+          <p><strong>Leela_ig Insta</strong></p>
+          <p>Leela has a ton of personality, and DERP!</p><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center slideanim">
+      <!-- Place Holder About Me or HTML Emails -->
+      <div class="col-12 col-md-6 ">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <!-- <a href="#" target=""> -->
+            <img  class="img-fluid"
+                  src="{% static "coming_soon.png" %}"
+                  alt="coming soon image">
+          <!-- </a> -->
+          <p><strong>What's On Deck</strong></p>
+          <p>Instagram clone, socieal media clone, and more!</p><br>
+        </div>
+      </div>
+
+      <!-- Place Holder About Me or HTML Emails -->
+      <div class="col-12 col-md-6 ">
+        <div id="projectsImage" class="thumbnail topThumbnail">
+          <!-- <a href="#" target=""> -->
+            <img  class="img-fluid"
+                  src="{% static "coming_soon.png" %}"
+                  alt="coming soon image">
+          <!-- </a> -->
+          <p><strong>What's On Deck</strong></p>
+          <p>Instagram clone, socieal media clone, and more!</p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Dreaded image carousel... JKJK, it has been fun getting this to work!!! -->
+  <div class="container-fluid bg-dgrey myCarousel">
+    <div id="carouselProject" class="carousel slide bg-dgrey" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselProject" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselProject" data-slide-to="1"></li>
+        <li data-target="#carouselProject" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner zCarouselContainer">
+        <div class="carousel-item active">
+          <a href="{% url 'pc' %}">
+            <img class="d-block w-100" src="{% static "pc_builds/az/az01.jpg" %}" alt="First slide">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"> <!-- Need to link to about.html when complete -->
+            <img class="d-block w-100" src="{% static "about_me.jpg" %}" alt="Second slide">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="http://zstall.com">
+            <img class="d-block w-100" src="{% static "img-grid.PNG" %}" alt="Third slide">
+          </a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselProject" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselProject" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- End Projects/Portfolio Section -->
+
+
+  <!-- Contact Section -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><strong>[location]</strong> Denver, US</p>
+        <p><strong>[c]</strong> +00 1515151515</p>
+        <p><strong>[e]</strong> myemail@something.com</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <form role="form" action="" method="post">
+
+            <p>Send me a message directly.</p>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
