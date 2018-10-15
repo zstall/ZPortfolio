@@ -30,6 +30,9 @@
   background-color: #d2d2d2;
 }
 
+.embed_video {
+  padding-top: 15px;
+}
 
 .latofont {
   font-family: 'Lato', sans-serif;
@@ -112,6 +115,13 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
 }
+
+
+.post-image {
+  height: 240px;
+  width: auto;
+}
+
 
 .btn-comment {
   /* position: absolute;

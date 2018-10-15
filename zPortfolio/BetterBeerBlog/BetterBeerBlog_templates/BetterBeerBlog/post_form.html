@@ -3,7 +3,7 @@
 
   <div class="container centerstage">
     <h1>Create/Edit your post here</h1>
-    <form class="post-form" method="POST">
+    <form class="post-form" enctype="multipart/form-data" method="POST">
       {% csrf_token %}
       {{form.as_p}}
       <button class="save btn btn-default" type="submit">Save</button>
