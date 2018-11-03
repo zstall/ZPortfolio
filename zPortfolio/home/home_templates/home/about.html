@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block nav %}
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+  </li>
+{% endblock %}
+
+{% block content %}
+<!-- header content with image -->
+<div class="index_image container-fluid bg-2 text-center container-fluid-about" id="about_home">
+  <h1>Zachary Stall</h1>
+  <h4>Developer in Denver Colorado</h4>
+  <!-- attention grabber image -->
+  <img  class="img-responsive rounded-circle margin"
+        src="{% static "index_05.jpg" %}"
+        alt="Pic Not Loadin - just my ugly mug"
+        width="350"
+        height="auto">
+</div>
+
+<!-- First Container -->
+<div class="container-fluid text-center container-fluid-about">
+  <h3 class="margin">Jr Dev Ready to Make an Impact</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center container-fluid-about">
+  <h3 class="margin">Resume</h3>
+  <embed type="application/pdf" src="{% static "resume.pdf" %}" width="100%" height="600px">
+</div>
+
+<!-- Third Container -->
+<div class="container-fluid text-center container-fluid-about">
+  <h3 class="margin">Projects I'm Proud Of</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <img src="{% static "index_03.jpg" %}" class="img-responsive margin" style="width:80%" alt="img not working. :(">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <img src="{% static "index_04.jpg" %}" class="img-responsive margin" style="width:80%" alt="img not working. :(">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <img src="{% static "index_05.jpg" %}" class="img-responsive margin" style="width:80%" alt="img not working. :(">
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

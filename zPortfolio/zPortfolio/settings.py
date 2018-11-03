@@ -146,7 +146,7 @@ STATICFILES_DIRS = [
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'BetterBeerBlog/BetterBeerBlog_media')
 
 LOGIN_REDIRECT_URL = 'BetterBeerBlog:post_list'
 

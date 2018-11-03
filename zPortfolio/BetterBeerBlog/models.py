@@ -9,9 +9,9 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length = 200)
     text = models.TextField()
-    blog_image = models.ImageField( upload_to="BetterBeerBlog/BetterBeerBlog_media/images",
-                                    default = "BetterBeerBlog/BetterBeerBlog_media/images/bbb_logo_square.png")
-    post_video = EmbedVideoField(null=True)
+    blog_image = models.ImageField( upload_to="images",
+                                    default = "images/bbb_logo_square.png")
+    post_video = EmbedVideoField(null=True, blank = True)
     create_date = models.DateTimeField(default = timezone.now)
     published_date = models.DateTimeField(blank = True, null = True)
 

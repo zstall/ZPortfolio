@@ -77,7 +77,8 @@
             at Metropolitan State University in Denver. Most recently I've been working as
             a online education specialist, developing online courses and maintaining content
             on my company LMS and website. I have a passion for learning and technology. I'm
-            highly motivated to make an impact and learn new technology.</p>
+            highly motivated to make an impact and learn new technology. If you'd like to learn
+            more about me, click <a href="{% url 'about' %}">here</a>.</p>
           </div>
         </div>
         <!-- Image of me, Caitlin, and Sam. -->
@@ -182,27 +183,72 @@
 
 
   <!-- Dreaded image carousel... JKJK, it has been fun getting this to work!!! -->
-  <div class="container-fluid bg-dgrey myCarousel">
-    <div id="carouselProject" class="carousel slide bg-dgrey" data-ride="carousel">
+  <div class="container-fluid bg-grey myCarousel">
+    <div id="carouselProject" class="carousel slide bg-grey" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselProject" data-slide-to="0" class="active"></li>
         <li data-target="#carouselProject" data-slide-to="1"></li>
         <li data-target="#carouselProject" data-slide-to="2"></li>
+        <li data-target="#carouselProject" data-slide-to="3"></li>
+        <li data-target="#carouselProject" data-slide-to="4"></li>
+        <li data-target="#carouselProject" data-slide-to="5"></li>
+        <li data-target="#carouselProject" data-slide-to="6"></li>
+        <li data-target="#carouselProject" data-slide-to="7"></li>
+        <li data-target="#carouselProject" data-slide-to="8"></li>
       </ol>
       <div class="carousel-inner zCarouselContainer">
+        <!-- Image 0 -->
         <div class="carousel-item active">
           <a href="{% url 'pc' %}">
-            <img class="d-block w-100" src="{% static "pc_builds/az/az01.jpg" %}" alt="First slide">
+            <img class="d-block w-100" src="{% static "projects_pc.jpg" %}" alt="First slide">
           </a>
         </div>
+        <!-- Image 1 -->
         <div class="carousel-item">
-          <a href="#"> <!-- Need to link to about.html when complete -->
-            <img class="d-block w-100" src="{% static "about_me.jpg" %}" alt="Second slide">
+          <a href="{% url 'about' %}">
+            <img class="d-block w-100" src="{% static "about.jpeg" %}" alt="Second slide">
           </a>
         </div>
+        <!-- Image 2: Fix image -->
         <div class="carousel-item">
           <a href="http://zstall.com">
-            <img class="d-block w-100" src="{% static "img-grid.PNG" %}" alt="Third slide">
+            <img id="test-image" class="d-block w-100" src="{% static "img-grid.PNG" %}" alt="Third slide">
+          </a>
+        </div>
+        <!-- Image 3 -->
+        <div class="carousel-item">
+          <a href="{% url 'pc' %}">
+            <img class="d-block w-100" src="{% static "projects_pc.jpg" %}" alt="Fourth slide">
+          </a>
+        </div>
+        <!-- Image 4 -->
+        <div class="carousel-item">
+          <a href="{% url 'BetterBeerBlog:post_list' %}">
+            <img class="d-block w-100" src="{% static "bbb_logo_round.png" %}" alt="Fifth slide">
+          </a>
+        </div>
+        <!-- Image 5 -->
+        <div class="carousel-item">
+          <a href="#"> <!-- Add Github Link -->
+            <img class="d-block w-100" src="{% static "about_me.jpg" %}" alt="Sixth slide">
+          </a>
+        </div>
+        <!-- Image 6 -->
+        <div class="carousel-item">
+          <a href="#"> <!-- Need to link to about.html when complete -->
+            <img class="d-block w-100" src="{% static "about_me.jpg" %}" alt="Seventh slide">
+          </a>
+        </div>
+        <!-- Image 7 -->
+        <div class="carousel-item">
+          <a href="#"> <!-- Need to link to about.html when complete -->
+            <img class="d-block w-100" src="{% static "about_me.jpg" %}" alt="Eighth slide">
+          </a>
+        </div>
+        <!-- Image 8 -->
+        <div class="carousel-item">
+          <a href="#"> <!-- Need to link to about.html when complete -->
+            <img class="d-block w-100" src="{% static "about_me.jpg" %}" alt="Ninth slide">
           </a>
         </div>
       </div>
