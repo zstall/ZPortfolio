@@ -5,7 +5,7 @@ app_name = "BetterBeerBlog"
 
 urlpatterns = [
     url(r'^BetterBeerBlog/$', views.PostListView.as_view(), name='post_list'),
-    url(r'^about/$', views.AboutView.as_view(), name='about'),
+    url(r'^bbb_about/$', views.AboutView.as_view(), name='bbb_about'),
     url(r'^post/(?P<pk>\d+)$', views.PostDetailView.as_view(), name='post_detail'),
     url(r'^post/BBB_new/$', views.CreatePostView.as_view(), name='post_new'),
     url(r'^post/(?P<pk>\d+)/edit/$', views.PostUpdateView.as_view(), name='post_edit'),
