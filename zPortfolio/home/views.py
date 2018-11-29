@@ -26,7 +26,7 @@ class HomeView(FormView):
         content = template.render(context)
 
         email = EmailMessage("New contact form submission", content, "zstall.com" + '', ['zstall4@gmail.com'], headers = {'Reply-To': contact_email })
-        email.send_email()
+        email.send()
         return super().form_valid(form)
 
 class ThanksView(TemplateView):
